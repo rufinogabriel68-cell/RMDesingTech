@@ -219,9 +219,9 @@
             box-shadow: 0 5px 20px rgba(243, 156, 18, 0.4);
             z-index: 9998;
             font-weight: 600;
-            display: flex;
+            display: outside;
             align-items: center;
-            gap: 12px;
+            gap: 5px;
             animation: slideInRight 0.5s ease;
         }
         
@@ -251,7 +251,7 @@
             z-index: 999;
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 5px;
         }
         
         .user-info.admin {
@@ -389,7 +389,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            position: sticky;
+            position: static;
             top: 0;
             z-index: 1000;
             border-bottom: 1px solid rgba(255,255,255,0.1);
@@ -403,8 +403,8 @@
         
         .btn-voltar {
             background: rgba(255,255,255,0.1);
-            border: 1px solid rgba(255,255,255,0.3);
-            color: white;
+            border: 1px solid rgba(97, 97, 97, 0.3);
+            color: rgb(199, 199, 199);
             padding: 10px 20px;
             border-radius: 8px;
             cursor: pointer;
@@ -501,26 +501,26 @@
            ESTILOS ESPECÍFICOS - SHAFTS
            ========================================== */
         .secao-shafts {
-            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+            background: linear-gradient(135deg, #000000 100%);
             padding-bottom: 20px;
         }
         
         .secao-shafts h1 {
             text-align: center;
-            color: #333;
+            color: #000000;
             margin-bottom: 10px;
             font-size: 24px;
         }
         
         .secao-shafts .subtitle {
             text-align: center;
-            color: #666;
+            color: #000000;
             margin-bottom: 20px;
             font-size: 14px;
         }
         
         .secao-shafts .conexao-info {
-            background: #e3f2fd;
+            background: #d4d4d4;
             border-left: 4px solid #2196f3;
             padding: 15px;
             margin-bottom: 20px;
@@ -639,7 +639,7 @@
            ESTILOS ESPECÍFICOS - APARTAMENTOS
            ========================================== */
         .secao-apartamentos {
-            background: linear-gradient(135deg, #04209c 0%, #022faa 100%);
+            background: linear-gradient(135deg,#000000 100%);
             padding-bottom: 20px;
         }
         
@@ -785,7 +785,7 @@
         
         .user-count {
             position: fixed;
-            top: 80px;
+            top: 125px;
             right: 20px;
             background: rgba(0,0,0,0.7);
             color: white;
@@ -971,15 +971,15 @@
             <p>Sistema de Controle de Infraestrutura</p>
          <div class="botoes-menu">
             <button class="btn-modulo shafts" onclick="mostrarSecao('shafts')">
-                <span class="icone">⚙️</span>
+                <span class="icone">📡</span>
                 <span class="titulo">SHAFTS</span>
-                <span class="descricao">Controle de Infraestrutura Técnica</span>
+                <span class="descricao"></span>
             </button>
             
             <button class="btn-modulo apartamentos" onclick="mostrarSecao('apartamentos')">
                 <span class="icone">📞</span>
                 <span class="titulo">TELEFONIA</span>
-                <span class="descricao">Gestão de Telefonia Torre 2</span>
+                <span class="descricao"></span>
             </button>
         </div>
     </div>
@@ -997,7 +997,7 @@
         
         <div class="menu-botoes">
             <button class="menu-btn" id="btn-shafts" onclick="mostrarSecao('shafts')">
-                ⚙️ Shafts
+                📡 Shafts
             </button>
             <button class="menu-btn" id="btn-apartamentos" onclick="mostrarSecao('apartamentos')">
                 📞 Apartamentos
